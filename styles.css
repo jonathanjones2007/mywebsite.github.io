@@ -1,3 +1,37 @@
-html {
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+header {
+    text-align: center;
+    padding-top: 125px;
+}
+
+.logo-style, .logo {
+    font-family: Red Rose, sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-a {
+    color: red;
+}
+
+.logo2 {
+    font-family: Red Rose,sans-serif;
+    font-weight: 300;
+    font-size: 4.5rem;
+}
+
