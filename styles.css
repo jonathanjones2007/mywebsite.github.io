@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 * {
     box-sizing: inherit;
     margin: 0;
@@ -12,6 +12,11 @@ html {
 
 }
 
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 header {
     text-align: center;
     padding-top: 125px;
@@ -20,7 +25,7 @@ header {
 .logo-style, .logo {
     font-family: Red Rose, sans-serif;
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 60px;
     text-decoration: none;
     color: black;
 }
@@ -32,6 +37,56 @@ header {
 .logo2 {
     font-family: Red Rose,sans-serif;
     font-weight: 300;
-    font-size: 4.5rem;
+    font-size: 50px;
 }
 
+nav {
+    padding-top: 15px;
+}
+
+li {
+    display: inline-block;
+    padding: 20px; 
+}
+
+.main-nav {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.intro {
+    width: 100%;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 25px;
+}
+
+
+.introhero {
+    font-size: 40px;
+    font-family: montserrat, serif;
+    font-weight: 500;
+    width: auto;
+}
+
+.briefintro {
+    font-family: montserrat, serif;
+    font-weight: 300;
+    font-size: 25px;
+    padding-top: 25px;
+    width: auto;
+}
+
+.socialicons {
+    height: 60px;
+    width: Auto;
+    margin-top: 30px;
+    margin-right: 20px;
+    width: auto;
+}
+
+.myself {
+
+}
