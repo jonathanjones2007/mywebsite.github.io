@@ -25,7 +25,7 @@ header {
 .logo-style, .logo {
     font-family: Red Rose, sans-serif;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 55px;
     text-decoration: none;
     color: black;
 }
@@ -37,7 +37,7 @@ header {
 .logo2 {
     font-family: Red Rose,sans-serif;
     font-weight: 300;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 nav {
@@ -53,6 +53,11 @@ li {
     text-decoration: none;
     color: black;
     font-size: 24px;
+}
+
+.main-nav:hover {
+    text-decoration: underline;
+    color: red;
 }
 
 .intro {
@@ -80,13 +85,15 @@ li {
 }
 
 .socialicons {
-    height: 60px;
-    width: Auto;
+    height: 50px;
+    width: 50px;
     margin-top: 30px;
     margin-right: 20px;
     width: auto;
 }
 
 .myself {
-
+    justify-content: inherit;
+    border-radius: 60%;
+    size: -50%
 }
