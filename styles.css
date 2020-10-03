@@ -64,7 +64,7 @@ li {
     width: 100%;
     padding-top: 80px;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 2fr 1fr;
     grid-column-gap: 25px;
 }
 
@@ -73,7 +73,6 @@ li {
     font-size: 40px;
     font-family: montserrat, serif;
     font-weight: 500;
-    width: auto;
 }
 
 .briefintro {
@@ -81,19 +80,17 @@ li {
     font-weight: 300;
     font-size: 25px;
     padding-top: 25px;
-    width: auto;
 }
+
 
 .socialicons {
     height: 50px;
     width: 50px;
     margin-top: 30px;
     margin-right: 20px;
-    width: auto;
 }
 
 .myself {
     justify-content: inherit;
     border-radius: 60%;
-    size: -50%
 }
