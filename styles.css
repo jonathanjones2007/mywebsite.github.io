@@ -19,13 +19,13 @@ html {
 
 header {
     text-align: center;
-    padding-top: 125px;
+    padding-top: 100px;
 }
 
 .logo-style, .logo {
     font-family: Red Rose, sans-serif;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 50px;
     text-decoration: none;
     color: black;
 }
@@ -37,10 +37,10 @@ header {
 .logo2 {
     font-family: Red Rose,sans-serif;
     font-weight: 300;
-    font-size: 45px;
+    font-size: 40px;
 }
 
-nav {
+.desktop-nav {
     padding-top: 15px;
 }
 
@@ -52,12 +52,39 @@ li {
 .main-nav {
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .main-nav:hover {
-    text-decoration: underline;
+    font-weight: bolder;
     color: red;
+}
+
+.mobile-navigations {
+    padding-top: 0px;
+    display: none;
+}
+
+.mobile-nav{
+    height: 10vh;
+    background-color: black;
+}
+
+.mob-nav{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+ .m {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    background: blue;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
 }
 
 .intro {
@@ -91,6 +118,73 @@ li {
 }
 
 .myself {
-    justify-content: inherit;
     border-radius: 60%;
+    width: 90%;
+    height: auto;
+}
+
+.page-title {
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 768px) {
+        
+    .container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    header {
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .logo-style, .logo {
+        font-size: 28px;
+    }
+
+    .logo2 {
+        font-size: 25px;
+    }
+    
+    .myself {
+        display: none;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+        padding-top: 40px;
+    }
+
+    .socialicons {
+       height: 40px;
+       width: 40px;
+    }
+    
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main-nav {
+        font-size: 18px;
+    }
+
+    .main-nav:hover {
+        text-decoration: none;
+    }
+
+    .introhero {
+        font-size: 30px;
+
+    }
+    
+    .briefintro {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+        
 }
