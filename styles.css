@@ -44,7 +44,7 @@ header {
     padding-top: 15px;
 }
 
-li {
+.dl {
     display: inline-block;
     padding: 20px; 
 }
@@ -61,48 +61,62 @@ li {
 }
 
 .mobile-navigations {
-    padding-top: 0px;
     display: none;
+    padding-top: 0px;
 }
 
-.mobile-nav{
-    height: 10vh;
-    background-color: black;
-}
-
-.mob-nav{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
- .m {
-    list-style: none;
+.mobile-nav {
     display: flex;
-    width: 50%;
-    background: blue;
-    height: 100%;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
-    margin-left: auto;
+    min-height: 8vh;
+}
+
+.m {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+
+.ml {
+    list-style: none;
+}
+
+.mob-nav {
+    color: white;
+    text-decoration: none;
+}
+
+.burger div {
+    display: none;
+    background-color: black;
+    width: 25px;
+    height: 5px;
+    margin: 3px;
 }
 
 .intro {
     width: 100%;
     padding-top: 80px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 25px;
+    grid-template-areas: "box1 ." 
+                        "box2 ."
+                        "box3 ." ". box4" ;
+    grid-template-columns: 2fr;
+    grid-column-gap: 30px;
+    grid-template-rows: 3fr;
 }
 
 
 .introhero {
+    grid-area: box1;
     font-size: 40px;
     font-family: montserrat, serif;
     font-weight: 500;
 }
 
 .briefintro {
+    grid-area: box2;
     font-family: montserrat, serif;
     font-weight: 300;
     font-size: 25px;
@@ -111,6 +125,7 @@ li {
 
 
 .socialicons {
+    grid-area: box3;
     height: 50px;
     width: 50px;
     margin-top: 30px;
@@ -118,8 +133,9 @@ li {
 }
 
 .myself {
+    grid-area: box4;
     border-radius: 60%;
-    width: 90%;
+    width: 80%;
     height: auto;
 }
 
@@ -128,11 +144,116 @@ li {
     font-size: 60px;
 }
 
-@media screen and (max-width: 768px) {
+.content-main-contact {
+    display: grid;
+    margin-top: 100px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.contact-name, .contact-email {
+    margin-top: 25px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;    
+    padding-left: 10px;
+}
+
+.contact-message {
+    margin-top: 25px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    resize: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.contact-submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 40%;
+}
+
+.contact-submit:hover {
+    background: white;
+    border: 4px solid #4CAF50;
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+
+.bottom {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+    .intro {
+        grid-template-areas: "box1" 
+                            "box2" 
+                            "box3" 
+                            "box4" ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+
+    .myself {
+        margin-top: 50px;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social {
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
         
+    body {
+        overflow-x: hidden;
+    }
+    
+    .mobile-navigations {
+        transform: translateX(100%);
+    }
+
+    .m {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        height: 92vh;
+        right: 0px;
+        top: 8vh;
+        font-size: 20px;
+        align-items: center;
+        width: 50%;
+        
+    }
+ 
     .container {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     header {
@@ -159,8 +280,8 @@ li {
     }
 
     .socialicons {
-       height: 40px;
-       width: 40px;
+       height: 55px;
+       width: 55px;
     }
     
     .social {
@@ -185,6 +306,16 @@ li {
     .briefintro {
         font-size: 20px;
         padding-top: 15px;
+    }
+
+    .contact {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .contact-submit {
+        font-size: 20px;
+        width: 100%;
     }
         
 }
